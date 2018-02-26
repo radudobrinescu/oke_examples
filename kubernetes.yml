@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-world
   labels:
-    commit: ${WERCKER_GIT_COMMIT}
+#    commit: ${WERCKER_GIT_COMMIT}
 spec:
   replicas: 1
   selector:
@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: hello-world
-        commit: ${WERCKER_GIT_COMMIT}
+ #       commit: ${WERCKER_GIT_COMMIT}
     spec:
       containers:
       - name: hello-world
@@ -32,14 +32,14 @@ metadata:
   name: hello-world
   labels:
     app: hello-world
-    commit: ${WERCKER_GIT_COMMIT}
+#    commit: ${WERCKER_GIT_COMMIT}
 spec:
   ports:
   - port: 30000
     targetPort: 8080
   selector:
     app: hello-world
-    commit: ${WERCKER_GIT_COMMIT}
+#    commit: ${WERCKER_GIT_COMMIT}
   type: LoadBalancer
 ---
 #apiVersion: extensions/v1beta1
