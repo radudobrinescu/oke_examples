@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: ${DOCKER_REPO}:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
+        #image: ${DOCKER_REPO}:${WERCKER_GIT_BRANCH}-${WERCKER_GIT_COMMIT}
+        image: ${DOCKER_REPO}:${WERCKER_GIT_BRANCH}-v1.0
         imagePullPolicy: Always
         ports:
         - name: hello-world
