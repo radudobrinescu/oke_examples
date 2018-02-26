@@ -8,7 +8,7 @@ import (
 )
 
 func HelloWorld(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("First Wercker test!!!"))
+	w.Write([]byte("First successful Wercker test!!!"))
 }
 
 func main() {
